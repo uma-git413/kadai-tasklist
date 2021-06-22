@@ -39,13 +39,13 @@ public class EditServlet extends HttpServlet {
         em.close();
 
      // メッセージ情報とセッションIDをリクエストスコープに登録
-        request.setAttribute("message", m);
+        request.setAttribute("tasks", m);
         request.setAttribute("_token", request.getSession().getId());
 
         // メッセージデータが存在しているときのみ
         // メッセージIDをセッションスコープに登録
         if(m != null) {
-            request.getSession().setAttribute("message_id", m.getId());
+            request.getSession().setAttribute("tasks_id", m.getId());
         }
 
         RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/messages/edit.jsp");
