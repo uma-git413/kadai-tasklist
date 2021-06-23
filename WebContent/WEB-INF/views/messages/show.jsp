@@ -12,7 +12,7 @@
                             <td><c:out value="${tasks.title}" /></td>
                         </tr>
                         <tr>
-                            <th>メッセージ</th>
+                            <th>タスク</th>
                             <td><c:out value="${tasks.content}" /></td>
                         </tr>
                         <tr>
@@ -26,7 +26,8 @@
                     </tbody>
                 </table>
 
-                <p><a href="${pageContext.request.contextPath}/edit?id=${tasks.id}">このメッセージを編集する</a></p>
+                <p><a href="${pageContext.request.contextPath}/edit?id=${tasks.id}">タスク</a></p>
+                <p><a href="${pageContext.request.contextPath}/index">一覧に戻る</a></p>
             </c:when>
             <c:otherwise>
                 <h2>お探しのデータは見つかりませんでした。</h2>

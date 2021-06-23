@@ -16,7 +16,7 @@
 <input type="text" name="title" value="${tasks.title}" />
 </label>
 <br /><br />
-<label>メッセージ<br />
+<label>タスク<br />
 <input type="text"  name="content" value="${tasks.content}"/>
 </label>
 <br /><br />
